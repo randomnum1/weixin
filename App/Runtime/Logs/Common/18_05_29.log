@@ -1,0 +1,274 @@
+[ 2018-05-29T17:06:40+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000678s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:06:40+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:06:40+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000134s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002335s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:06:40+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001009s ]
+ERR: 无法加载模块:Img
+
+
+
+[ 2018-05-29T17:07:51+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001292s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:07:51+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001533s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:07:51+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:07:51+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000184s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002007s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:07:51+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001113s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:09+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001149s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:09+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:09+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000960s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:09+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:09+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001034s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:14+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001074s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:14+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001198s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:14+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001449s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:14+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000067s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:14+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:30+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:30+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000331s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006123s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:30+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000910s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:30+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000938s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:30+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001193s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:31+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001445s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:31+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002201s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:31+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000957s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:31+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001013s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:09:31+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001225s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:07+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000725s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:07+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001783s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:07+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000921s ]
+ERR: 无法加载模块:Img
+
+Img
+
+[ 2018-05-29T17:10:07+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:16+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001787s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:16+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:16+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002625s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:16+08:00 ] ::1 /gbzs/img/doctor_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001418s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:16+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000934s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:47+08:00 ] ::1 /gbzs/img/user_head.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000152s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001999s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:47+08:00 ] ::1 /gbzs/img/login_bg.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001624s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:47+08:00 ] ::1 /gbzs/img/doctor_question_tag.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000056s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000959s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:10:47+08:00 ] ::1 /gbzs/img/ask_float_bt.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001255s ]
+ERR: 无法加载模块:Img
+
+[ 2018-05-29T17:13:08+08:00 ] ::1 /gbzs/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000677s ]
+ERR: 无法加载模块:Login
+
+[ 2018-05-29T17:14:19+08:00 ] ::1 /gbzs/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000739s ]
+ERR: 无法加载模块:Login
+
+[ 2018-05-29T17:22:39+08:00 ] ::1 /gbzs/index.php/Index/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000716s ]
+ERR: 无法加载模块:Index
+

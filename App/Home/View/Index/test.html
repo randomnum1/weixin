@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+</head>
+<body>
+<div id="test">
+
+</div>
+</body>
+</html>
+
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+
+<script>
+     var json = {"project_name":"项目一","name":"张三","sex":"男","age":"50","time":"2018-08-29","tel":"13462612658","desc":"项目一"};
+
+    // var url = "{:U('Index/add')}";
+
+//   var json = {
+//       "tel":"13462612658"
+//   };
+//   var url = "{:U('Index/request_message')}";
+
+//    var json = {
+//        "tel":"13462612658",
+//        "code":"3a87"
+//    };
+//    var url = "{:U('Index/request_login')}";
+
+//    var json = {
+//        "fuck":"sdasd",
+//    };
+//    var url = "{:U('Index/request_state')}";
+
+    $.ajax({
+        url: url,
+        type: "post",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(json),
+        dataType: "json",
+        success:function(msg){
+            console.log(msg);
+            var str= JSON.stringify(msg);
+            $("#test").text(str);
+        },
+        error: function (msg) {
+            console.log(msg);
+            var str= JSON.stringify(msg);
+            $("#test").text(str);
+        }
+    });
+
+</script>

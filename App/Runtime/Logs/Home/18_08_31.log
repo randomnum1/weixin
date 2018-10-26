@@ -1,0 +1,219 @@
+[ 2018-08-31T00:08:45+08:00 ] 140.207.54.73 /apily/index.php/WxpayRequest/notify_url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0023s ]
+SQL: SELECT `re_order_state` FROM `xz_record` WHERE `re_order_num` = 'xz201808294984984' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-08-31T00:38:46+08:00 ] 140.207.54.76 /apily/index.php/WxpayRequest/notify_url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000359s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0017s ]
+SQL: SELECT `re_order_state` FROM `xz_record` WHERE `re_order_num` = 'xz201808294984984' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000361s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2018-08-31T01:08:47+08:00 ] 140.207.54.75 /apily/index.php/WxpayRequest/notify_url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0018s ]
+SQL: SELECT `re_order_state` FROM `xz_record` WHERE `re_order_num` = 'xz201808294984984' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000375s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-08-31T02:08:49+08:00 ] 140.207.54.74 /apily/index.php/WxpayRequest/notify_url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0017s ]
+SQL: SELECT `re_order_state` FROM `xz_record` WHERE `re_order_num` = 'xz201808294984984' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000442s ]
+
+[ 2018-08-31T03:12:12+08:00 ] 14.17.3.65 /apily/index.php/WxpayRequest/qr_code
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 138 行.
+SQL: SELECT `re_pr_name`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2018-08-31T03:49:31+08:00 ] 183.57.53.196 /apily/index.php/WxpayRequest/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003912s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000189s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2018-08-31T04:10:47+08:00 ] 183.57.53.196 /apily/index.php/WxpayRequest/apily.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000286s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 32 行.
+SQL: SELECT `re_pr_name`,`re_order_num`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+NOTIC: [8] Undefined variable: project_name E:\phpstudy\PHPTutorial\WWW\apily\App\Runtime\Cache\Home\cc29da7549e6aedd3f509e3f30d9b38a.php 第 237 行.
+NOTIC: [8] Undefined variable: project_fee E:\phpstudy\PHPTutorial\WWW\apily\App\Runtime\Cache\Home\cc29da7549e6aedd3f509e3f30d9b38a.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004573s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2018-08-31T06:32:17+08:00 ] 59.36.119.227 /apily/index.php/WxpayRequest/notify_url
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2018-08-31T09:05:33+08:00 ] 101.81.88.208 /apily/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000319s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000355s ]
+ERR: 非法操作:index
+
+[ 2018-08-31T09:19:47+08:00 ] 101.81.88.208 /apily/index.php/WxpayRequest/apily
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000300s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: xzyl_cookie E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\AuthController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `xz_user` WHERE `us_tel` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 32 行.
+SQL: SELECT `re_pr_name`,`re_order_num`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null AND `re_order_state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+NOTIC: [8] Undefined variable: project_name E:\phpstudy\PHPTutorial\WWW\apily\App\Runtime\Cache\Home\cc29da7549e6aedd3f509e3f30d9b38a.php 第 237 行.
+NOTIC: [8] Undefined variable: project_fee E:\phpstudy\PHPTutorial\WWW\apily\App\Runtime\Cache\Home\cc29da7549e6aedd3f509e3f30d9b38a.php 第 240 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000188s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2018-08-31T09:20:05+08:00 ] 101.81.88.208 /apily/index.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+ERR: 非法操作:index
+
+[ 2018-08-31T09:20:13+08:00 ] 101.81.88.208 /apily/index.php/WxpayRequest/qr_code.html/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index: xzyl_cookie E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\AuthController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `xz_user` WHERE `us_tel` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 138 行.
+SQL: SELECT `re_pr_name`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null AND `re_order_state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2018-08-31T10:29:42+08:00 ] 101.81.88.208 /apily/index.php/WxpayRequest/qr_code.html/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000290s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined index: xzyl_cookie E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\AuthController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `xz_user` WHERE `us_tel` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 163 行.
+SQL: SELECT `re_pr_name`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null AND `re_order_state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000443s ]
+
+[ 2018-08-31T14:35:01+08:00 ] 14.17.3.64 /apily/index.php/WxpayRequest/qr_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8] Undefined index: xzyl_cookie E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\AuthController.class.php 第 9 行.
+SQL: SHOW COLUMNS FROM `xz_user` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `xz_user` WHERE `us_tel` = '' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `xz_record` [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: WxpayRecordId E:\phpstudy\PHPTutorial\WWW\apily\App\Home\Controller\WxpayRequestController.class.php 第 163 行.
+SQL: SELECT `re_pr_name`,`re_order_fee` FROM `xz_record` WHERE `re_id` = null AND `re_order_state` = '1' LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+

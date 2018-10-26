@@ -1,0 +1,329 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="__PUBLIC__/Home//js/flexible.js"></script>
+		<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+		<title>小琢医疗</title>
+	</head>
+	<style type="text/css">
+		body, html {
+		    height:100%;
+		    width: 100%;
+		}
+		
+		html, body, div, span,h2, h3, h4, h5, h6, p, pre, a, code, em, img, small, strong, sub, sup, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label 
+		{
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    outline: 0;
+		    vertical-align: baseline;
+		    background: transparent;
+		    font-weight:normal;
+		    font-family: "Microsoft YaHei";
+		    text-decoration:none; 
+		 } 
+		
+		.yuyue_win_mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		.beian{
+			position: absolute;
+			z-index: 100;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 1.6rem;
+			padding: 0.153333rem 0 0 0;
+			text-align: center;
+			background-color: #222d3b;
+		}
+		
+		.beian a{
+			position: relative;
+			display: block;
+			height: 0.666666rem;
+			line-height: 0.666666rem;
+			color: #efefef;
+			font-family: "微软雅黑";
+			font-size: 0.346666rem;
+		}
+		.beian span{
+			position: relative;
+			display: block;
+			height: 0.666666rem;
+			line-height: 0.666666rem;
+			color: #efefef;
+			font-family: "微软雅黑";
+			font-size: 0.346666rem;
+			margin-left: 0;
+		}
+		
+		
+		.pay_wrap{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 1000;
+			display: block;
+			overflow: scroll;
+			min-width: 0;
+		}
+		.pay_content{
+			position: absolute;
+			width: 9.066666rem;
+			height: 13.466666rem;
+			background-color: white;
+			top: 5%;
+			left: 50%;
+			margin-left: -4.533333rem;
+			margin-bottom: 1.6rem;
+		}
+		.yuyuescroll{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+		}
+		.pay_p{
+			font-size: 0.453333rem;
+			width: 100%;
+			height: 1.066666rem;
+			margin: 0 auto;
+			color: #47A9E4;
+			font-family: "微软雅黑";
+			font-weight: bold;
+			line-height: 1.066666rem;
+			text-align: center;
+		}
+		.pay_line{
+			border-top: 2px dashed #b7b7b7;
+			width: 80%;
+			height: 1px;
+			margin: 0 auto;
+		}
+		.pay_title{
+			width: 70%;
+			margin: 0 auto;
+			margin-top: 0.4rem;
+			height: auto;
+			line-height: 0.666666rem;
+			color: #888;
+			font-size: 0.373333rem;
+			font-family: "微软雅黑";
+		}
+		.pay_word{
+			width: 70%;
+			margin: 0 auto;
+			margin-bottom: 0.4rem;
+			height: auto;
+			line-height: 0.666666rem;
+			color: #454545;
+			font-size: 0.373333rem;
+			font-family: "微软雅黑";
+		}
+		.pay_tel{
+			width: 70%;
+			margin: 0 auto;
+			margin-top: 0.4rem;
+			height: 0.666666rem;
+			line-height: 0.666666rem;
+			font-size: 0.533333rem;
+			color: #47a9e4;
+		}
+		.pay_bt{
+			position: absolute;
+			width:80%;
+			left: 10%;
+			bottom: 0.4rem;
+			height: 1.066666rem;
+			line-height: 1.066666rem;
+			background-color: #47a9e4;
+			text-align: center;
+			font-size: 0.346666rem;
+			color: white;
+		}
+		.code_img{
+			display: block;
+			width: 70%;
+			margin: 0 auto;
+		}
+		.mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.2);
+			display: none;
+			z-index: 10000;
+		}
+
+		.msgwin{
+			position: absolute;
+			z-index: 10000;
+			display: block;
+			top: 45%;
+			left: 50%;
+			margin-top: -1.666666rem;
+			margin-left: -2rem;
+			width: 4rem;
+			height: 3.333333rem;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 0.266666rem;
+			animation: msgbox_act 0.2s forwards;
+			-moz-animation: msgbox_act 0.2s forwards;	/* Firefox */
+			-webkit-animation: msgbox_act 0.2s forwards;	/* Safari 和 Chrome */
+			-o-animation: msgbox_act 0.2s forwards;	/* Opera */
+			display: none;
+		}
+		.msgimg{
+			position: relative;
+			display: block;
+			width: 1.04rem;
+			height: 1.04rem;
+			margin: 0.533333rem auto 0.383333rem auto;
+		}
+		.msgword{
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+			height: 0.8rem;
+			color: white;
+			font-size: 0.4rem;
+			text-align: center;
+		}
+		
+		
+		@keyframes msgbox_act
+		{
+			0% {
+				transform: scale(0.9);
+				opacity: 0;
+				}
+			100% {
+				transform: scale(1);
+				opacity: 1;
+				}	
+		}
+		
+		
+
+	</style>
+	<body style="background-color: #f8f8f8;">
+		
+		<div class="main_wrap">
+			
+			<div class="yuyue_wrap">
+				<img src="__PUBLIC__/Home/img/mobilebg.png" alt=""  class="yuyue_win_mask">
+				
+			</div>
+			
+
+			<div class="pay_wrap">
+				<div class="pay_content">
+					<p class="pay_p">小琢医疗 - 支付</p>
+					<div class="pay_line"></div>
+					<p class="pay_title">您预约的项目为：</p>
+					<p class="pay_word">{$project_name}</p>
+					
+					<p class="pay_title" style="margin-top: 20px;">预约费用：</p>
+					<p class="pay_word" style="color: #47a9e4;">{$project_fee}元（本费用为预约手续费）</p>
+					
+					<div class="pay_line" style="margin-top: 0.533333rem;"></div>
+					
+					<p class="pay_title">预约成功后，我们的医生将在第一时间与您取得联系。</br>您可在预约系统中点击我的预约查看预约记录。</p>
+					<p class="pay_title" style="margin-top: 20px;">若有疑问请拨打：</p>
+					<p class="pay_tel">400-901-7718</p>
+					
+					<div class="pay_bt">立即支付</div>
+				</div>
+			</div>
+			
+
+			<div class="beian">
+				<a href="http://www.miitbeian.gov.cn">沪ICP备18019643号-1</a><span>小琢(上海)医疗科技有限公司</span>
+			</div>
+		</div>
+		
+		
+		<div class="mask"></div>
+		<div class="msgwin">
+				<img src="__PUBLIC__/Home/img/msgbox_notice.png" class="msgimg">
+				<p class="msgword">提示信息</p>
+		</div>
+
+
+	</body>
+</html>
+	<script type="text/javascript">
+
+		$(".pay_bt").click(function(){
+			callpay();
+		});
+
+        function callpay()
+        {
+            if (typeof WeixinJSBridge == "undefined"){
+                if( document.addEventListener ){
+                    document.addEventListener('WeixinJSBridgeReady', jsApiCall, false);
+                }else if (document.attachEvent){
+                    document.attachEvent('WeixinJSBridgeReady', jsApiCall);
+                    document.attachEvent('onWeixinJSBridgeReady', jsApiCall);
+                }
+            }else{
+                jsApiCall();
+            }
+        }
+
+        //调用微信JS api 支付
+        function jsApiCall(){
+        	var state = "{$state}";
+        	if(state == 'success'){
+	            WeixinJSBridge.invoke(
+	                'getBrandWCPayRequest',
+	                {$jsApiParameters},
+	                function(res){
+	                    if(res.err_msg == "get_brand_wcpay_request:ok" ){
+	                        pay_success();
+	                    }else{
+	                        pay_fail();
+						}
+	                    // WeixinJSBridge.log(res.err_msg);
+	                    // console.log(res.err_msg);
+	                    // alert(res.err_code+'<br/>'+res.err_desc+'<br/>'+res.err_msg);
+	                }
+	            );
+        	}else{
+        		pay_fail();
+        	}
+        }
+
+		function pay_success(){
+	    	$(".msgwin").show();
+	    	$(".mask").show();
+	        $(".msgword").html("支付成功</br>页面将自动跳转");
+	    	setTimeout(function(){
+	    		window.location.href = "http://www.xiaozhuoyiliao.com/yuyue.html?p=1";
+	    	},2000)
+	    }
+		
+		function pay_fail(){
+	    	$(".msgwin").show();
+	    	$(".mask").show();
+	        $(".msgword").html("支付失败</br>请重新预约");
+	    	setTimeout(function(){
+	    		window.location.href = "http://www.xiaozhuoyiliao.com/yuyue.html";
+	    	},2000)
+	    }
+
+	</script>

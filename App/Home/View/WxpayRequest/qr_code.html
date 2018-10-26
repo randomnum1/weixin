@@ -1,0 +1,592 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>小琢医疗-支付</title>
+		<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		body, html {
+		    height:100%;
+		    width: 100%;
+		}
+		
+		html, body, div, span,h2, h3, h4, h5, h6, p, pre, a, code, em, img, small, strong, sub, sup, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label 
+		{
+		    margin: 0;
+		    padding: 0;
+		    border: 0;
+		    outline: 0;
+		    vertical-align: baseline;
+		    background: transparent;
+		    font-weight:normal;
+		    font-family: "Microsoft YaHei";
+		    text-decoration:none; 
+		 } 
+		
+		html{
+			min-width: 1200px;
+		}
+		 
+		input::-webkit-input-placeholder{
+		            color:#d2d2d2;
+		        }
+		        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+		            color:#d2d2d2;
+		        }
+		        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+		            color:#d2d2d2;
+		        }
+		        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+		            color:#d2d2d2;
+		        }
+		textarea::-webkit-input-placeholder{
+		            color:#d2d2d2;
+		        }
+		        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+		            color:#d2d2d2;
+		        }
+		        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+		            color:#d2d2d2;
+		        }
+		        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */ 
+		            color:#d2d2d2;
+		        }
+		
+		
+		
+		
+		::-webkit-datetime-edit-fields-wrapper {
+			background-color: none; 
+			} 
+		::-webkit-datetime-edit-text {
+			color: #888888; padding: 0 .3em; 
+			} 
+		::-webkit-datetime-edit-year-field { color: #888888; } 
+		::-webkit-datetime-edit-month-field { color: #888888; } 
+		::-webkit-datetime-edit-day-field { color: #888888; } 
+		::-webkit-inner-spin-button { visibility: hidden; } 
+		::-webkit-calendar-picker-indicator { 
+		border: 1px solid #ccc; 
+		border-radius: 2px; 
+		box-shadow: inset 0 1px #fff, 0 1px #eee; 
+		background-color: #eee; 
+		background-image: -webkit-linear-gradient(top, #f0f0f0, #e6e6e6); 
+		color: #666; 
+		}	 
+			 
+		
+		.topmenu_wrap{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 80px;
+			background-color: rgba(255,255,255,0.8);
+			z-index: 10000;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+		}
+		.topmenu_center{
+			position: relative;
+			height: 80px;
+			width: 1200px;
+			margin: 0 auto;
+		}
+		.mobile_top_bt{
+			display: none;
+		}
+		.logo_tohomepage{
+			display: inline-block;
+			width: 127px;
+			height: 80px;
+			float: left;
+		}
+		.logo_tohomepage img{
+			margin-left: 20px;
+			display: block;
+		}
+		.top_right_bt{
+			position: relative;
+			float: right;
+			width: 110px;
+			height: 80px;
+		}
+		
+		.yuyue_bt_wrap{
+			background-color: white;
+			height: auto;
+		}
+		
+		.top_yuyue_bt_big{
+			position: relative;
+			float: right;
+			width: 110px;
+			height: auto;
+		}
+		
+		.top_yuyue_bt{
+			position: relative;
+			float: right;
+			width: 110px;
+			height: 80px;
+			background: url(../img/top_yuyue_bt_bg.png);
+		}
+		
+		.top_record_bt{
+			position: absolute;
+			top: 10px;
+			right: 0;
+			z-index: -1;
+			width: 110px;
+			height: 34px;
+			font-size: 18px;
+			text-align: center;
+			line-height: 34px;
+			color: white;
+			background-color: #6bc7ff;
+		}
+		
+		
+		.record_show_act{
+			animation: record_act 0.4s forwards;
+		  -moz-animation: record_act 0.4s forwards;	/* Firefox */
+		  -webkit-animation: record_act 0.4s forwards;	/* Safari 和 Chrome */
+		  -o-animation: record_act 0.4s forwards;
+		}
+		
+		@keyframes  record_act
+		{
+			from {
+				top: 10px;
+				}
+			to {
+				top: 90px;
+				}
+		}
+		
+		
+		
+		.topbt_chs{
+			font-size: 18px;
+			color: #858585;
+			font-family: "微软雅黑";
+			margin-top: 16px;
+			text-align: center;
+		}
+		.topbt_eng{
+			font-size: 14px;
+			color: #858585;
+			font-family: "微软雅黑";
+			margin-top: 4px;
+			text-align: center;
+			opacity: 0.5;
+		}
+		.banner{
+			position: relative;
+			width: 100%;
+			margin: 0 auto;
+		}
+		.banner img{
+			display: block;
+			width: 100%;
+		}
+		.banner_to_content_title{
+			position: relative;
+			height: 25px;
+			width: 100%;
+		}
+		.b_to_c_bg{
+			position: absolute;
+			width: 100%;
+			height: 25px;
+			background-color: #47a9e4;
+			opacity: 0.45;
+		}
+		.b_to_c_title{
+			position: absolute;
+			top: -25px;
+			left: 50%;
+			margin-left: -230px;
+			width: 460px;
+			height: 50px;
+			background-color: #47a9e4;
+			font-size: 30px;
+			font-weight: bold;
+			font-family: "微软雅黑";
+			text-align: center;
+			color: white;
+			line-height: 50px;
+			opacity: 0.95;
+		}
+		
+		.mobile_menu{
+			display: none;
+		}
+		
+		
+		
+		
+		.bottom_content{
+			position: relative;
+			width: 100%;
+			background-color: #27374d;
+			height: 240px;
+		}
+		
+		.code_wrap{
+			position: relative;
+			margin: 0 auto;
+			width: 100%;
+			height: 210px;
+			text-align: center;
+		}
+		
+		.code{
+			position: relative;
+			display: inline-block;
+			margin-top: 20px;
+			margin-left: 60px;
+			width: 150px;
+			height: 200px;
+		}
+		.code img{
+			position: relative;
+			width: 150px;
+			height: 150px;
+			display: block;
+		}
+		.code_word{
+			position: relative;
+			width: 100%;
+			text-align: center;
+			color: white;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: bold;
+		}
+		
+		
+		.video_wrap{
+			position: relative;
+			display: block;
+			margin: 0 auto;
+			width: 660px;
+		}
+		
+		
+		.alert_wrap{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			min-width: 1200px;
+			z-index:  100000000;
+			display: none;
+		}
+		.alert_win{
+			position: relative;
+			width: 300px;
+			height: 180px;
+			top: 50%;
+			margin: 0 auto;
+			padding-top: 20px;
+			margin-top: -100px;
+			background-color: white;
+			box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+		}
+		.alert_win p{
+			position: relative;
+			margin: 0 auto;
+			font-size: 17px;
+			width: 250px;
+			height: 80px;
+			text-align: center;
+			line-height: 30px;	
+		}
+		
+		
+		@media screen and (min-width: 600px) {
+		    .dw{
+		        transform: scale(2);
+		    }
+		}
+		@media screen and (min-width: 1000px) {
+		    .dw{
+		        transform: scale(3);
+		    }
+		}
+		
+		.beian{
+			position: relative;
+			width: 100%;
+			height: 50px;
+			text-align: center;
+			background-color: #222d3b;
+		}
+		.beian a{
+			position: relative;
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			color: #efefef;
+			font-family: "微软雅黑";
+			font-size: 14px;
+		}
+		.beian span{
+			position: relative;
+			display: inline-block;
+			height: 50px;
+			line-height: 50px;
+			margin-left: 50px;
+			color: #efefef;
+			font-size: 14px;
+		}
+		
+		
+		
+		
+		.pay_wrap{
+			position: relative;
+			width: 100%;
+			height: 419px;
+		}
+		
+		.pay_content{
+			position: absolute;
+			width: 750px;
+			height: 310px;
+			top: 35px;
+			left: 50%;
+			margin-left: -425px;
+			border: 1px #47a9e4 dashed;
+			padding: 20px 50px;
+			background-color: white;
+		}
+		
+		.pay_title{
+			height: auto;
+			line-height: 30px;
+			color: #888;
+			font-size: 16px;
+			font-family: "微软雅黑";
+		}
+		
+		.pay_word{
+			height: auto;
+			line-height: 40px;
+			color: #454545;
+			font-size: 18px;
+			font-family: "微软雅黑";
+		}
+		
+		.pay_line{
+			margin-top: 20px;
+			width: 400px;
+			height: 1px;
+			border-bottom: 1px solid rgba(0,0,0,.08);
+		}
+		
+		.code_img{
+			position: absolute;
+			top: 30px;
+			right: 50px;
+			width: 250px;
+			height: 300px;
+		}
+		.code_img img{
+			width: 250px;
+			height: 250px;
+		}
+		.code_img p{
+			width: 250px;
+			height: 250px;
+			text-align: center;
+		}
+		.mask{
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background-color: rgba(0,0,0,0.2);
+			display: none;
+		}
+		.msgwin{
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 150px;
+			height: 150px;
+			margin-top: -75px;
+			margin-left: -75px;
+			background-color: rgba(0,0,0,0.5);
+			border-radius: 10px;
+			animation: msgbox_act 0.2s forwards;
+			-moz-animation: msgbox_act 0.2s forwards;	/* Firefox */
+			-webkit-animation: msgbox_act 0.2s forwards;	/* Safari 和 Chrome */
+			-o-animation: msgbox_act 0.2s forwards;	/* Opera */
+			display: none;
+		}
+		.msgimg{
+			position: relative;
+			display: block;
+			width: 50px;
+			height: 50px;
+			margin: 20px auto 20px auto;
+		}
+		.msgword{
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+			height: auto;
+			color: white;
+			font-size: 16px;
+			text-align: center;
+		}
+		@keyframes msgbox_act
+		{
+			0% {
+				transform: scale(0.9);
+				opacity: 0;
+				}
+			100% {
+				transform: scale(1);
+				opacity: 1;
+				}	
+		}
+		
+		
+
+	</style>
+
+	
+	<body style="background-color: #f8f8f8;">
+		<div class="topmenu_wrap">
+			<div class="topmenu_center">	
+				<a href="index.html" class="logo_tohomepage"><img src="__PUBLIC__/Home//img/logo_with_word.png" alt="" /></a>
+				<a href="" class="news_tonewspage top_right_bt"><p class="topbt_chs">集团动态</p><p class="topbt_eng">News</p></a>
+				<a href="http://www.xiaozhuoyiliao.com/health.html" class="news_tonewspage top_right_bt"><p class="topbt_chs">健康科普</p><p class="topbt_eng">Health</p></a>
+				<a href="http://www.xiaozhuoyiliao.com/service.html" class="news_tonewspage top_right_bt"><p class="topbt_chs">就诊指南</p><p class="topbt_eng">Service</p></a>
+				<a href="http://www.xiaozhuoyiliao.com/team.html" class="news_tonewspage top_right_bt"><p class="topbt_chs">专科团队</p><p class="topbt_eng">Team</p></a>
+				<a href="http://www.xiaozhuoyiliao.com/about.html" class="news_tonewspage top_right_bt"><p class="topbt_chs">小琢医疗</p><p class="topbt_eng">XiaoZhuo</p></a>
+				<a href="http://www.xiaozhuoyiliao.com/index.html" class="news_tonewspage top_right_bt"><p class="topbt_chs">首页</p><p class="topbt_eng">HomePage</p></a>
+				<a href="javascript:void(0)" class="mobile_top_bt"><img src="__PUBLIC__/Home/img/mobile_top_bt.png" alt="" /></a>
+			</div>
+		</div>
+		<div class="main_wrap">
+			<div class="banner">
+				<img src="__PUBLIC__/Home/img/other_banner.png" alt="" />
+			</div>
+			
+			<div class="banner_to_content_title">
+				<div class="b_to_c_bg"></div>
+				<div class="b_to_c_title">小琢医疗 — 预约支付</div>
+			</div>
+		
+			<div class="pay_wrap">
+				<div class="pay_content">
+					<p class="pay_title">您预约的项目为：</p>
+					<p class="pay_word">{$project_name}</p>
+					
+					<p class="pay_title">预约费用：</p>
+					<p class="pay_word" style="color: #47a9e4;">{$project_fee}元（本费用为预约手续费）</p>
+					
+					<div class="pay_line"></div>
+					
+					<p class="pay_title" style="margin-top: 20px;">预约成功后，我们的医生将在第一时间与您取得联系。</br>您可在官网右上角点击我的预约查看预约记录。</p>
+					<!--<p class="pay_word" style="margin-top: 10px;">请使用微信扫描右侧二维码支付</p>-->
+					<p class="pay_word" style="margin-top: 10px;">若有疑问请拨打服务热线：<span style="color: #47a9e4;">400-901-7718</span></p>
+					<div class="code_img"><img src="http://qr.topscan.com/api.php?text={$project_code}"><p>使用微信扫描二维码支付</p></div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="bottom_content">
+				<!-- <div class="code_wrap">
+					<div class="code" style="margin-left: 0;">
+						<img src="__PUBLIC__/Home/img/code/gubin.jpg">
+						<p class="code_word">骨病助手</br>公众号</p>
+					</div>
+					<div class="code">
+						<img src="__PUBLIC__/Home/img/code/kuantong.jpg" alt="" />
+						<p class="code_word">髋痛助手</br>公众号</p>
+					</div>
+					
+					<div class="code">
+						<img src="__PUBLIC__/Home/img/code/gujiankang.jpg" alt="" />
+						<p class="code_word">小琢骨健康</br>公众号</p>
+					</div>
+				</div> -->
+			</div>
+			
+			<div class="beian">
+				<a href="http://www.miitbeian.gov.cn">沪ICP备18019643号-1</a><span>小琢(上海)医疗科技有限公司</span>
+			</div>
+			
+			<div class="mask"></div>
+			<div class="msgwin">
+				<img src="__PUBLIC__/Home/img/msgbox_notice.png" class="msgimg">
+				<p class="msgword">提示信息</p>
+			</div>
+
+		</div>
+	</body>
+	
+	<script type="text/javascript">
+		
+
+		var endtime = 3600;
+ 		var get_state = setInterval("pay_state()",5000);
+ 		
+	    function pay_state(){
+	    	$.ajax({
+	    		type:"POST",
+	    		url:"{:U('WxpayRequest/state')}",
+	    		async:true,
+	    		data: JSON.stringify("666"),
+	            xhrFields: {
+		            withCredentials: true
+		        },
+		        success: function(data){
+	         		if(data.result.type == "success"){
+	         			window.clearInterval(get_state);
+	         			pay_success();
+	         		}
+	         		else{
+	         			if(endtime > 0){
+	         				endtime -= 5;
+	         			}
+	         			else{
+	         				window.clearInterval(get_state);
+	         				pay_fail();
+	         			}
+	         		}
+	       		}
+	    	});
+	   	 }
+
+		function pay_success(){
+	    	$(".msgwin").show();
+	    	$(".mask").show();
+	        $(".msgword").html("支付成功</br>页面将自动跳转");
+	    	setTimeout(function(){
+	    		window.location.href = "http://www.xiaozhuoyiliao.com/index.html?p=1";
+	    	},2000)
+	    }
+		
+		function pay_fail(){
+	    	$(".msgwin").show();
+	    	$(".mask").show();
+	        $(".msgword").html("支付失败</br>请重新预约");
+	    	setTimeout(function(){
+	    		window.location.href = "http://www.xiaozhuoyiliao.com/index.html";
+	    	},2000)
+	    }
+ 
+	        
+	</script>
+	
+</html>
